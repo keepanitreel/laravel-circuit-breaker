@@ -1,0 +1,29 @@
+{
+    "name": "keepanitreel/circuitbreaker",
+    "description": "Disable horizon queue when a circuit is broken",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeffrey Cobb",
+            "email": "jeff@jeffcobb.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Keepanitreel\\CircuitBreaker\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Keepanitreel\\CircuitBreaker\\ServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            }
+        }
+    }
+}
